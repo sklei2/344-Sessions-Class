@@ -9,11 +9,13 @@ session_start();
 <?php
 
 // Read the sessions
-if ($_SESSION["username"] != "") {
+if ($_SESSION["username"] != "" && $_SESSION["name"] != "") {
 
 	echo "<h1>Hello ";
     echo $_SESSION["username"];
-    echo "<h2> ";
+    echo "(Known as ";
+    echo $_SESSION["name"];
+    echo ") <h2> ";
 }else{
 ?>
 
