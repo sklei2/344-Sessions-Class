@@ -10,10 +10,10 @@ session_start();
 
 // Read the sessions
 if ($_SESSION["username"] != "") {
-
-	echo "<h1>Hello ";
-    echo $_SESSION["username"];
-    echo "<h2> ";
+?>
+	<h2>Hello <?php $_SESSION["username"]; ?> </h2>
+	<a href="session3.php"> Yet another page </a>
+<?php
 }else{
 ?>
 
