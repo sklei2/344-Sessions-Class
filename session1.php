@@ -7,7 +7,7 @@ session_start();
 <body>
 
 <?php
-
+session_start();
 if (isset($_POST['name-submit']) && !empty($_POST['name'])) {
 	$_SESSION['name'] = $_POST['name'];
 }
